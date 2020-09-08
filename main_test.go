@@ -26,7 +26,7 @@ func TestMain(m *testing.M) {
 	os.Exit(code)
 }
 
-func TestEmptyTablet(t *testing.T) {
+func TestEmptyTable(t *testing.T) {
 	clearTable()
 
 	req, _ := http.NewRequest("GET", "/products", nil)
@@ -138,7 +138,6 @@ func TestDeleteProduct(t *testing.T) {
 
 	req, _ = http.NewRequest("DELETE", "product/1", nil)
 	response = executeRequest(req)
-
 	checkResponseCode(t, http.StatusOK, response.Code)
 
 	req, _ = http.NewRequest("GET", "/product/1", nil)
