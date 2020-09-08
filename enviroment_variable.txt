@@ -1,0 +1,3 @@
+export APP_DB_USERNAME=goapimux
+export APP_DB_PASSWORD=goapimux
+export APP_DB_NAME=goapimux
